@@ -1,0 +1,295 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+
+.hero{
+  width: 100%;
+  min-height: 100vh;
+  background: #eceaff;
+  color: #525252;
+}
+
+nav{
+  background: #71a3c9;
+  width: 100%;
+  padding: 10px 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  z-index: 2;
+  
+}
+
+.logo{
+  width: 120px;
+}
+
+.user-pic{
+  width: 40px;
+  border-radius: 50px;
+  cursor: pointer;
+  margin-left: 30px;
+}
+
+nav ul{
+  width: 100%;
+  text-align: right;
+}
+
+nav ul li{
+  display: inline-block;
+  list-style: none;
+  margin: 10px 20px;   
+}
+
+nav ul li a{
+  color: #fff;
+  text-decoration: none;
+}
+
+
+.sub-menu-wrap{
+  position: absolute;
+  top: 100%;
+  right: 10%;
+  width: 320px;
+  max-height: 0px;
+  overflow: hidden;
+  transition: max-height 0.5s;
+}
+
+.sub-menu-wrap.open-menu{
+  max-height: 400px;
+}
+
+#subMenu2.open-menu {
+  max-height: 800px;
+}
+
+
+.sub-menu{
+  background: #fff;
+  padding: 20px;
+  margin: 10px;
+  z-index: 2;
+}
+
+.user-info{
+  display: flex;
+  align-items: center;
+}
+
+.user-info h3{
+  font-weight: 500;
+}
+
+.user-info img{
+  width: 60px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.sub-menu hr{
+  border: 0;
+  height: 1px;
+  width: 100%;
+  background: #ccc;
+  margin: 15px 0 10px;
+}
+.sub-menu-link{
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #525252;
+  margin: 12px 0;
+}
+
+.sub-menu-link p{
+  width: 100%;
+}
+
+.sub-menu-link img{
+  width: 40px;
+  background: #e5e5e5;
+  border-radius: 50%;
+  padding: 8px;
+  margin-right: 15px;
+}
+
+.sub-menu-link span{
+  font-size: 22px;
+  transition: transform 0.5s;
+}
+
+.sub-menu-link:hover span{
+  transform: translate(5px );
+}
+
+.sub-menu-link:hover p{
+  font-weight: 600;
+}
+
+/* Pocetak */
+.container {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #fff;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  transform: translate(0, 11px) rotate(-45deg);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+  transform: translate(0, -11px) rotate(45deg);
+}
+
+/*BMI Calculator and Calorie Calculator*/
+  
+.calculator {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  padding: 5px;
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+.calculator h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.calculator label {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.calculator input[type="number"] {
+  width: 100%;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+.calculator button {
+  background-color: #333;
+  color: #fff;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.calculator button:hover {
+  background-color: #555;
+}
+
+.calculator p {
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+.calculator span {
+  font-weight: bold;
+}
+
+/* Signup Page */
+
+.signup-container {
+  max-width: 560px;
+  margin: 20px auto;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: #f2f2f2;
+  font-family: 'Poppins', sans-serif;
+  color: #525252;
+  border-radius: 5px;
+}
+
+.signup-details {
+  text-align: center;
+}
+
+.signup-details h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.signup-details p,
+.signup-details ol li {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.signup-details ol {
+  padding-left: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 14px;
+}
+
+input[type="submit"] {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+input[type="submit"]:hover {
+  background-color: #333;
+}
+
+.company-bio {
+  background-color: #f5f5f5;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.6;
+  max-width: 800px;
+  margin-top: -300px;
+  margin-left: auto;    
+  margin-right: auto;   
+  margin-bottom: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+

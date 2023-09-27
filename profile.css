@@ -1,0 +1,81 @@
+body {
+    background-color: #eceaff; /* light purple background color */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-picture {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-top: 50px;
+    border: 5px solid black; /* black border */
+}
+
+.profile-picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profile-name {
+    font-size: 36px;
+    margin-top: 20px;
+    color: black; /* black text color */
+}
+
+.about-section {
+    margin-top: 50px;
+    max-width: 600px;
+    text-align: center;
+    margin-top: 20px;
+    line-height: 1.5;
+    background-color: gray; /* black box color */
+    color: white; /* white text color */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.intro-section {
+    margin-top: 50px;
+    max-width: 600px;
+    text-align: center;
+    margin-top: 15px;
+    line-height: 1.5;
+    background-color: gray; /* black box color */
+    color: white; /* white text color */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.profile-settings {
+    margin-top: 20px;
+}
+
+.profile-settings button {
+    background-color: lightgray;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.left_workouts {
+    width: 100%;
+    float: left;
+    text-align: left;
+  }
+  
+  .left_workouts img {
+    width: 17px;
+    height: 17px;
+    border-radius: 100%;
+    margin-left: 10px;
+  }
